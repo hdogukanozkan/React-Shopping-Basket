@@ -4,7 +4,7 @@ export default function Product(props) {
   return (
     <div className="box" key={props.product.id}>
       <div className="imageBurada">
-        <img src={props.product.image} />
+        <img src={props.product.image} alt="" />
       </div>
       <h2>
         {props.product.title.charAt(0).toUpperCase() +

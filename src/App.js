@@ -6,7 +6,7 @@ import Product from "./component/product";
 import Sepet from "./component/sepet";
 
 function App() {
-  const [money, setMoney] = useState(100);
+  const [money] = useState(100);
   const [urunler, setUrunler] = useState([]);
   const [toplam, setToplam] = useState();
 
@@ -38,7 +38,7 @@ function App() {
         urunlerVarmi,
       ]);
 
-      if (urunlerVarmi.amount == 0) {
+      if (urunlerVarmi.amount === 0) {
         setUrunler((oldArray) => [
           ...oldArray.filter((item) => item.id !== product.id),
         ]);
