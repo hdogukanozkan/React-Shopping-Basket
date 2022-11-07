@@ -1,0 +1,49 @@
+[
+	{
+		"id":1,
+		"title":"Coca cola",
+		"image":"https://ayb.akinoncdn.com/products/2022/04/12/1740/c7515af9-86b8-425d-8fd8-b10aeb4a97e7_size780x780_quality60_cropCenter.jpg",
+		"price":2,
+		"amount":0
+	},
+	{
+		"id":2,
+		"title":"fanta",
+		"image":"https://cdnsta.avansas.com/mnresize/900/-/urun/84334/fanta-1lt-4lu-paket-zoom-1.jpg",
+		"price":1.8,
+		"amount":0
+
+	},
+	{
+		"id":3,
+		"title":"çavdar Ekmeği",
+		"image":"https://cdn.yemek.com/mnresize/940/940/uploads/2020/04/bby-ekmek-yemekcom.jpg",
+		"price":3,
+		"amount":0
+
+	},
+	{
+		"id":4,
+		"title":"gofret",
+		"image":"https://ayb.akinoncdn.com/products/2021/01/27/26460/07381a7c-02f4-4e97-a73b-138d70da225e_size780x780_quality60_cropCenter.jpg",
+		"price":5,
+		"amount":0
+
+	},
+	{
+		"id":5,
+		"title":"Lays Fırından",
+		"image":"https://cdn.akakce.com/z/lays/lay-s-yogurt-mevsim-yesillikleri-parti-boy-150-g.jpg",
+		"price":4,
+		"amount":0
+
+	},
+	{
+		"id":6,
+		"title":"test kitabı",
+		"image":"https://cdn.kitapsec.com/image/urun/2020/08/11/1597150329.jpg",
+		"price":50,
+		"amount":0
+
+	}
+]

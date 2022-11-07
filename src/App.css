@@ -1,31 +1,117 @@
-.App {
+/* Header */
+.header {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+.Dolar {
+  color: rgb(30, 128, 30);
+  font-size: larger;
+}
+
+.header h2 {
+  color: #eee;
+  font-size: 27px;
+}
+
+/* ÜRÜNLER */
+
+.container {
+  padding: 1rem 0;
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.box {
+  background-color: #fff;
+  width: 19%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.box:hover {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.box .imageBurada {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box .imageBurada img {
+  text-align: center;
+  height: 265px;
+  width: 235px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0;
+  padding: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0 0 10px;
+  color: green;
+}
+
+.box .btnAll {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.box .btnAll span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box .btnGreen {
+  cursor: pointer;
+  padding: 10px;
+  width: 95px;
+  font-size: 16px;
+  border-radius: 0;
+  border: 1px solid rgb(0, 107, 61);
+  background: #fff;
+  color: rgb(0, 107, 61);
+  outline: none;
+  transition: 0.2s;
+}
+
+.box .btnRed {
+  cursor: pointer;
+  padding: 10px;
+  width: 95px;
+  font-size: 16px;
+  border-radius: 0;
+  outline: none;
+  transition: 0.2s;
+  border: 1px solid rgb(107, 0, 0);
+  color: rgb(107, 0, 0);
+}
+
+.box .btnGreen:hover {
+  background-color: rgb(9, 118, 71);
+  color: #fff;
+}
+
+.box .btnRed:hover {
+  background-color: rgb(118, 9, 9);
+  color: #fff;
+}
+
+.box button[disabled] {
+  cursor: not-allowed;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +121,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Sepet  */
+
+.sepet {
+  width: 500px;
+  box-shadow: 15px 15px 55px rgba(0, 0, 0, 1);
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 75px;
+}
+
+.sepet.active {
+  height: auto;
+}
+
+.sepet h1 {
+  margin: 5px;
+}
+
+.sepet-box {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3px solid rgba(0, 0, 0, 0.2);
+}
+
+.sepet .Clicked {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sepet .Clicked:hover {
+  transform: scale(1.2);
+}
+
+.sepet .Clicked i {
+  font-size: 1.2rem;
+}
+
+.sepet-box img {
+  width: 100%;
+}
+
+.sepet-box div {
+  flex: 1;
+}
+
+.sepet-box .price {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sepet-box .amount {
+  color: rgb(58, 58, 58);
+  font-size: 20px;
+  font-weight: 700;
 }
